@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
-let sc=0;
-function Score() {
+// let sc=0;
+function Score(props) {
     const [score,setScore]=useState(0);
   return (
   <div className='min-h-screen flex items-center justify-center bg-gradient-to-br from-indigo-500 via-purple-700 to-pink-500'>
     <div className='bg-white p-10 rounded-2x1 shadow-2x1 shadow-green-500 text-center w-[350px]'>
     <h2 className='text-4xl font-bold text-gray-700 mb-2'>
-Cricket Score
+{props.team}
   </h2>
   <p className='hidden text-gray-500 mb-6'>State Example Using<span className='font-bold'>useState()</span></p>
 <h1 className='text-7xl font-extrabold text-blue-600 mb-8'> {score}</h1>
@@ -30,3 +30,4 @@ export default Score
   {/* <h1>{sc}</h1>
   <button>CLICK ME</button> */}
       {/* hello */}
+      //in p >hidded -remove add {props.location -remove--state..}
